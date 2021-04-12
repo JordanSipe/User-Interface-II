@@ -11,7 +11,6 @@ dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
 	outline: 0;
 	padding: 0;
 	margin: 0;
-	border: 0;
 	}
 /* remember to define focus styles! */
 :focus {
@@ -49,7 +48,7 @@ h1 {
 
 h1:hover {
     color: orange;
-    transition: 2s;
+    transition: 1s;
 }
 
 /* Navigation Bar */
@@ -74,12 +73,13 @@ nav a {
 nav a:hover {
     background-color: black;
     color: white;
-    transition: 2s;;
+    transition: 1s;
 }
 
 /* Intro to my portfolio */
 .intro {
-    max-width: 60%;
+    max-width: 100%;
+    width: 60%;
     display: flex;
     margin-top: 2.25rem;
     margin-left: auto;
@@ -99,38 +99,39 @@ nav a:hover {
 
 /* Pictures on my website */
 .img {
-    margin-left: 5%;
+    margin: 0 2%;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .img .sideimg {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 5%;
+    margin: 0 2%;
+    width: 35%
 }
 
 .img .sideimg .img1 {
-    height: 400px;
-    width: auto;
+    height: 300px;
+    width: 100%;
 }
 
 .img section .img2 {
     margin-top: 25px;
+    width: 100%;
 }
 
 .imgp {
-        display: flex;
-        width: 30%;
-        height: auto;
-        margin: auto;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.6rem;
-        margin-right: 1%;
+    display: flex;
+    width: 30%;
+    height: auto;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    margin-right: 3%;
 }
 
 .imgp p {
@@ -208,4 +209,55 @@ nav a:hover {
 .linkedin:hover {
     color: white;
     background-color: blue;
+}
+
+@media (max-width: 800px) {
+
+    .intro {
+        width: 85%;
+    }
+
+    .imgp {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .img .sideimg {
+        width: 55%;
+    }
+}
+
+@media (max-width: 500px) {
+    
+    .img img {
+        width: 100%;
+        margin-bottom: 3%;
+    }
+
+    .img .sideimg {
+        margin: 0;
+        width: 100%;
+    }
+
+    .img .sideimg .img1 {
+        margin: 3% 0;
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
